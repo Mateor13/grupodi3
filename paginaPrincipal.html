@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+<body>
+     <!-- Barra de navegación -->
+    <ul class="nav d-flex justify-content-evenly bg-info">
+        <li class="nav-item">
+            <a  class="nav-link fs-5 text-white" href="">Inicio</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link text-white" href="#">Productos</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link text-white" href="#">Ofertas</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link text-white" href="#">Nosotros</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link text-white" href="#">Contacto</a>
+        </li>
+        <li class="nav-item">
+            <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-primary" type="submit">Search</button>
+            </form>
+        </li> 
+    </ul>
+    <!-- Slider, carrusel de imagenes -->
+<br>
+<div id="carouselExampleDark" class="carousel carousel-dark slide">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active" data-bs-interval="10000">
+        <img src="Imagenes/iphone-15-negro-doble_9.png" class="d-block w-100" alt="..." height="700px">
+      </div>
+      <div class="carousel-item" data-bs-interval="2000">
+        <img src="Imagenes/Macbook_Air_M1_Apple_Silver.jpg" class="d-block w-100" alt="..." height="700px">
+      </div>
+      <div class="carousel-item">
+        <img src="Imagenes/NomadaWare_laptop_asus_zenbook_14_oled_ux8406ma_ps99t-1.webp" class="d-block w-100" alt="..." height="700px">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Anterior</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Siguiente</span>
+    </button>
+  </div>
+  <br>
+    <!-- Listado de productos -->
+    <h1 class="text-center p-5 bg-info mb-0">Productos</h1>
+    <div class="dropdown bg-info ps-3 mt-0">
+        <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+          Filtrar
+        </button>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="">Precios</a></li>
+          <li><a class="dropdown-item" href="">Marca</a></li>
+          <li><a class="dropdown-item" href="">Procesador</a></li>
+        </ul>
+      </div>
+    <div class="row row-cols-1 row-cols-md-3 g-4 bg-info pb-4 mt-0">
+        <div class="col">
+          <div class="card h-100">
+            <a type="button" data-bs-toggle="modal" data-bs-target="#staticBackdrop1"><img src="Imagenes/1366_2000.jpeg" class="card-img-top" alt="..."></a>
+            <div class="card-body">
+              <h5 class="card-title">iphone 15</h5>
+              <p class="card-text">El chip A16 Bionic permite todo tipo de funcionalidades avanzadas, funcionalidad Aislamiento de Voz para las llamadas telefónicas y el rendimiento extremadamente fluido en juegos con gráficos avanzados.</p>
+                <h4>$1000</h4>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <a type="button" data-bs-toggle="modal" data-bs-target="#staticBackdrop2"><img src="Imagenes/D_NQ_NP_666672-MLA46217453580_052021-O.jpg" class="card-img-top" alt="..."></a>
+            <div class="card-body">
+              <h5 class="card-title">Asus TUF F15</h5>
+              <p class="card-text">El TUF Gaming F15 tiene un panel de 144 Hz y nivel IPS que es ideal para disfrutar de juegos rápidos.</p>
+            <h4>$1200</h4>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <a type="button" data-bs-toggle="modal" data-bs-target="#staticBackdrop3"><img src="Imagenes/Dell-Inspiron-15-6-Laptop-Intel-Core-i5-12GB-Memory-256GB-Solid-State-Drive-Black_c761828d-f59d-4d87-a380-33740e087477.12423ff52be2c3671d251794ff0afca0.webp" class="card-img-top" alt="..."></a>
+            <div class="card-body">
+              <h5 class="card-title">Dell Inspiron</h5>
+              <p class="card-text">Excelente relación calidad-precio Esta es una laptop muy completa y con una excelente relación entre calidad y precio.</p>
+            <h4>$1300</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row row-cols-1 row-cols-md-3 g-4 bg-info pb-4">
+        <div class="col">
+          <div class="card h-100">
+            <a  type="button" data-bs-toggle="modal" data-bs-target="#staticBackdrop4"><img src="Imagenes/HP-Pavilion-13-3-FHD-Intel-Core-i3-8GB-RAM-128GB-SSD-Silver_906cf222-d138-430a-8146-d129b0cca3a2_2.f838f300a6e31f50074faf4091a1da7b.jpeg" class="card-img-top" alt="..."></a>
+            <div class="card-body">
+              <h5 class="card-title">HP Pavilion</h5>
+              <p class="card-text">Es una muy buena computadora y se desempeña de forma excelente para el trabajo la multitarea y hacer llamadas el diseño es muy elegante.</p>
+            <h4>$1350</h4>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <a type="button" data-bs-toggle="modal" data-bs-target="#staticBackdrop5"><img src="Imagenes/MNEH3E-A-6-653d9abdb12c8.webp" class="card-img-top" alt="..."></a>
+            <div class="card-body">
+              <h5 class="card-title">MACBOOK Pro</h5>
+              <p class="card-text">La MacBook Pro da un salto al futuro con los chips M3, M3 Pro y M3 Max. Fabricados con tecnología de 3 nanómetros y una nueva arquitectura de GPU.</p>
+            <h4>$1400</h4>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <a  type="button" data-bs-toggle="modal" data-bs-target="#staticBackdrop6"><img src="Imagenes/TELEFONO-SAMSUNG-GALAXY-A52-6128GB-AZUL.png" class="card-img-top" alt="..."></a>
+            <div class="card-body">
+              <h5 class="card-title">Samsung A52</h5>
+              <p class="card-text">El Samsung Galaxy A52 Negro es para ti. Cuenta con una súper pantalla de 6,5" y una cámara avanzada de 64 MP.</p>
+            <h4>$350</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+      <br class="bg-info">
+
+    <!-- Modal 1 -->
+      <div class="modal fade" id="staticBackdrop1" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="staticBackdropLabel">Información</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body text-center">
+              <img src="Imagenes/iphone-15-negro-doble_9.png" alt="" height="200px">
+              <h3>iPhone 15 Pro Max</h3>
+              <p>El chip A16 Bionic permite todo tipo de funcionalidades avanzadas, desde la fotografía computacional que se usa en las fotos de 24 MP y los retratos de última generación, hasta la funcionalidad Aislamiento de Voz para las llamadas telefónicas y el rendimiento extremadamente fluido en juegos con gráficos avanzados.</p>
+                <h4>$1000</h4>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cerrar</button>
+              <button type="button" class="btn btn-success" data-bs-dismiss="modal">Comprar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Modal 2 -->
+      <div class="modal fade" id="staticBackdrop2" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5" id="staticBackdropLabel">Información</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body text-center">
+                <img src="Imagenes/D_NQ_NP_666672-MLA46217453580_052021-O.jpg" alt="" height="200px">
+                <h3>Asus TUF F15</h3>
+              <p>Gráficos GTX supercargados: los gráficos de juego son suaves como la seda con la NVIDIA GeForce GTX 1650 4GB GDDR6 para que puedas mantenerte inmerso en el juego incluso en los momentos más intensivos gráficamente. Cámara: cámara HD de 720P. Red y comunicación: Wi-Fi 6 (802.11ax)+Bluetooth 5.2 (banda dual) 2*2; (*La versión Bluetooth puede cambiar con las actualizaciones del sistema operativo. Wi-Fi 6 (802.11ax) (doble banda) 2 x 2 + Bluetooth 5.2 (*La versión Bluetooth puede cambiar con la versión del sistema operativo diferente). Batería: 90 WHrs, 3S1P, 3 celdas de iones de litio. Voltaje: 20.0 voltios. Diseño de teclado: qwerty</p>
+                <h4>$1200</h4>
+            </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cerrar</button>
+                <button type="button" class="btn btn-success" data-bs-dismiss="modal">Comprar</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      <!-- Modal 3 -->
+      <div class="modal fade" id="staticBackdrop3" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5" id="staticBackdropLabel">Información</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body text-center">
+                <img src="Imagenes/Dell-Inspiron-15-6-Laptop-Intel-Core-i5-12GB-Memory-256GB-Solid-State-Drive-Black_c761828d-f59d-4d87-a380-33740e087477.12423ff52be2c3671d251794ff0afca0.webp" alt="" height="200px">
+                <h3>Dell Inspiron</h3>
+              <p>Procesador
+                Intel® Core™ i3-1305U de 13.ª generación (10 MB de caché, 5 núcleos, 6 subprocesos, hasta 4,50 GHz)
+                
+                Sistema operativo
+                (Dell Technologies recomienda Windows 11 Pro para empresa)
+                Windows 11 Home, inglés, francés, italiano, portugués y español
+                
+                Tarjeta gráfica
+                Tarjeta gráfica Intel® UHD Graphics
+                
+                Pantalla
+                Pantalla FHD+ de 35,6 cm (14,0"), 16:10 (1920 x 1200), antirreflectante, sin función táctil, 250 nits, WVA, compatible con ComfortView
+                
+                Memoria 
+                Memoria DDR5 de 8 GB (1 x 8 GB) a 4400 MT/s
+                
+                Almacenamiento
+                Unidad de estado sólido PCIe NVMe M.2 de 512 GB
+                
+                Color
+                Tapa de plástico Ice Blue
+                
+                Software de productividad
+                Active su Microsoft 365 para una prueba de 30 días
+                
+                Software de seguridad
+                1 año de McAfee+ Premium
+                
+                Servicios de asistencia 
+                1 año de servicio básico in situ tras el diagnóstico remoto con asistencia solo para hardware
+                
+                Protección contra daños accidentales
+                None
+                
+                Teclado
+                Teclado retroiluminado Carbon Black, español (QWERTY)</p>
+                <h4>$1300</h4>
+            </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cerrar</button>
+                <button type="button" class="btn btn-success" data-bs-dismiss="modal">Comprar</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      <!-- Modal 4 -->
+      <div class="modal fade" id="staticBackdrop4" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5" id="staticBackdropLabel">Información</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body text-center">
+                <img src="Imagenes/HP-Pavilion-13-3-FHD-Intel-Core-i3-8GB-RAM-128GB-SSD-Silver_906cf222-d138-430a-8146-d129b0cca3a2_2.f838f300a6e31f50074faf4091a1da7b.jpeg" alt="" height="200px">
+                <h3>HP Pavilion</h3>
+                <p>
+                    La laptop 2 en 1 HP Pavilion x360 de 14 pulgadas te brinda una flexibilidad extrema en un tamaño compacto. Potencia durante todo el día con una batería de larga duración y la Carga rápida HP[1]. Disfruta de un entretenimiento inmersivo con una pantalla con microbordes en todos sus lados y audio de B&O. Diseñado pensando en el medio ambiente, contiene plásticos de origen oceánico y plásticos reciclados posconsumo[2].
+                    
+                    Flexibilidad extrema con cuatro diferentes modos de posición
+                    Mantén la productividad con el modo laptop, retransmite utilizando los modos invertido o tienda y permanece conectado en cualquier lugar con el modo tablet.
+                    
+                    Más entretenimiento desde cualquier ángulo
+                    Transmite desde cualquier ángulo con una increíble pantalla de microborde en todos sus lados y altavoces duales con audio de B&O.
+                    
+                    Mantente conectado gracias a la batería de larga duración
+                    Permanece conectado con facilidad en los desplazamientos gracias a la rápida conectividad wifi[3], una batería de larga duración y la Carga rápida HP[1].
+                    </p>
+                <h4>$1350</h4>
+            </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cerrar</button>
+                <button type="button" class="btn btn-success" data-bs-dismiss="modal">Comprar</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      <!-- Modal 5 -->
+      <div class="modal fade" id="staticBackdrop5" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5" id="staticBackdropLabel">Información</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body text-center">
+                <img src="Imagenes/MNEH3E-A-6-653d9abdb12c8.webp" alt="" height="200px">
+                <h3>Macbook Pro</h3>
+                <p>Chip M3 de Apple
+                    
+                    CPU de 8 núcleos con 4 núcleos de rendimiento y 4 de eficiencia
+                    GPU de 10 núcleos
+                    Trazado de rayos acelerado por hardware
+                    Neural Engine de 16 núcleos
+                    100 GB/s de ancho de banda de memoria
+                    Motor multimedia
+                    
+                    H.264, HEVC, ProRes y ProRes RAW con aceleración por hardware
+                    Motor de decodificación de video
+                    Motor de codificación de video
+                    Motor de codificación y decodificación ProRes
+                    Decodificación AV1</p>
+                <h4>$1400</h4>  
+            </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cerrar</button>
+                <button type="button" class="btn btn-success" data-bs-dismiss="modal">Comprar</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      <!-- Modal 6 -->
+      <div class="modal fade" id="staticBackdrop6" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5" id="staticBackdropLabel">Información</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body text-center">
+                <img src="Imagenes/TELEFONO-SAMSUNG-GALAXY-A52-6128GB-AZUL.png" alt="" height="200px">
+                <h3>Samsung A52</h3>
+                <p>SAMSUNG GALAXY A52 5G
+
+                    DIMENSIONES Y PESO
+                    
+                    159,9 x 75,1 x 8,4 mm
+                    189 g
+                    
+                    PANTALLA: Super AMOLED 6,5" FullHD+ (1.080 x 2.400 px) 407 ppp, 120 Hz
+                    
+                    PROCESADOR: Snapdragon 750G 5G
+                    
+                    RAM: 6/8 GB
+
+                    
+                    128/256 GB (microSD hasta 1 TB)
+
+                    
+                    Principal: AF OIS de 64 MP (f/1.8, 0,8 μm)
+                    GA: 12 MP FF (f/2.2, 1,12 µm)
+                    Macro: 5 MP FF (f/2.4, 1,12 µm)
+                    Profundidad: 5 MP AF (f/2.4)
+
+                    
+                    32 MP FF (f/2.2, 0,8 µm)
+
+                    
+                    4.500 mAh + carga rápida 25 W
+
+                    
+                    Android 11 + One UI
+
+                    
+                    5G, Wi-Fi 802.11 a/b/g/n/ac (2.4G+5GHz)
+                    Bluetooth 5.0, NFC
+                    GPS, Glonass, BeiDou, Galileo
+                  
+                    
+                    Lector de huellas en pantalla, IP67, dual SIM, Dolby Atmos, Altavoces estéreo AKG
+                  
+                    
+                    6 GB + 128 GB: 390 euros
+                    8 GB + 256 GB: 458 euros</p>
+                <h4>$350</h4>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cerrar</button>
+                <button type="button" class="btn btn-success" data-bs-dismiss="modal">Comprar</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+    <!-- Mapas y preguntas frecuentes -->
+    <h1>Ubicación y cuestionamientos</h1>
+    <div class="container-fluid d-flex justify-content-between">
+        <div class="ratio ratio-4x3">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.802831937363!2d-78.49322189026549!3d-0.15964839983811158!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91d59bfa6c2d33fb%3A0x3a9d998905fa1312!2sZona%20Tecnologica!5e0!3m2!1ses!2sec!4v1718677751670!5m2!1ses!2sec" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div class="accordion" id="pregunta1">
+            <h3 class="text bg-secondary text-white text-center">PREGUNTAS FRECUENTES</h3>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button bg-secondary-subtle" type="button" data-bs-toggle="collapse" data-bs-target="#pregunta01" aria-expanded="false" aria-controls="panelsStayOpen-collapseOne">
+                        ¿Los productos tienen garantía?
+                    </button>
+                </h2>
+                <div id="pregunta01" class="accordion-collapse collapse show">
+                    <div class="accordion-body">
+                      <strong>Si </strong> los productos que adquieras tienen como minimo 5 años de garantía. 
+                    </div>
+                  </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button bg-secondary-subtle" type="button" data-bs-toggle="collapse" data-bs-target="#pregunta02" aria-expanded="false" aria-controls="panelsStayOpen-collapseOne">
+                        ¿Hacen envios a todo el pais?
+                    </button>
+                </h2>
+                <div id="pregunta02" class="accordion-collapse collapse show">
+                    <div class="accordion-body">
+                      <strong>Si, </strong> los artículos se envían a cualquier parte del pais por un costo adicional de $2.
+                    </div>
+                  </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button bg-secondary-subtle" type="button" data-bs-toggle="collapse" data-bs-target="#pregunta03" aria-expanded="false" aria-controls="panelsStayOpen-collapseOne">
+                        ¿Puedo retirar mi producto en la tienda?
+                    </button>
+                </h2>
+                <div id="pregunta03" class="accordion-collapse collapse show">
+                    <div class="accordion-body">
+                      <strong>Si, </strong> los pedidos podrán ser retirados si usted en las opciones de compra seleccionó la opción "Retiro en tienda".
+                    </div>
+                  </div>
+            </div>
+            </div>
+        </div>
+    </div>
+    <!-- Videos promocionales -->
+    <h1 >Videos sobre el negocio</h1>
+    <div class="container d-flex">
+        <div class="ratio ratio-16x9 justify-content-center">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/hlIjY4hBbHs?si=rX1Wf7QSSKfjWHZY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+        <div class="ratio ratio-16x9 justify-content-center">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/Ipmx7qb9AHM?si=wYeTDjMvzSCL4uRB" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>        
+        </div>
+        <div class="ratio ratio-16x9 justify-content-center">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/QiXnv15Ko5A?si=4lQjoJWIiZsbfFUR" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+    </div>
+    <div class="text text-center text-black mt-5 bg-secondary-subtle" id="nosotros">
+        <h1>Mas sobre nosotros</h1>
+    </div>
+    <!-- Información sobre el negocios -->
+    <div class="container-fluid d-flex">
+        <div class="text text-black text-center border-black">
+            <h4 class="text text-center" center>Mision</h4>
+            <p>Proveer a nuestros clientes la más innovadora y variada gama de artículos tecnológicos de alta calidad, asegurando una experiencia de compra fácil, segura y accesible desde cualquier lugar</p>
+        </div>
+        <div class="text text-black text-center border-black">
+            <h4 class="text text-center">Vision</h4>
+            <p>Ser la tienda en línea líder en tecnología, reconocida por nuestra excelencia en servicio al cliente, productos de vanguardia y compromiso con la satisfacción del cliente.</p>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+<footer>
+    <div class="container-fluid">
+        <div class="row p-5 pb-2 bg-dark text-white">
+            <div class="col-xs-12 col-md-6 col-lg-4">
+                <p class="h4 mb-3">Enlaces</p>
+                <div class="mb-2">
+                    <a class="text-secondary text-decoration-none" href="#">Politica de Privcacidad</a>
+                </div>
+                <div class="mb-2">
+                    <a class="text-secondary text-decoration-none" href="#">Terminos y Condiciones</a>
+                </div>
+            </div>
+            <div class="col-xs-12 col-md-6 col-lg-4">
+                <p class="h4 mb-3">Contacto</p>
+                <div class="mb-2">
+                    <a class="text-secondary text-decoration-none" href="#">0989026843</a>
+                </div>
+                <div class="mb-2">
+                    <a class="text-secondary text-decoration-none" href="#">ithan.camacho@epn.edu.ec</a>
+                </div>
+            </div>
+            <div class="col-xs-12 col-md-6 col-lg-4">
+                <p class="h4 mb-3">Redes Sociales</p>
+                <div class="mb-2">
+                    <img src="Imagenes/instagram.png" alt="" style="height: 1.40rem">
+                    <a class="text-secondary text-decoration-none" href="#">Instagram</a>
+                </div>
+                <div class="mb-2">
+                    <img src="Imagenes/facebook.png" alt="" style="height: 1.40rem">
+                    <a class="text-secondary text-decoration-none" href="#">Facebook</a>
+                </div>
+                <div class="mb-2">
+                    <img src="Imagenes/twitter.png" alt="" style="height: 1.4rem">
+                    <a class="text-secondary text-decoration-none" href="#">Twitter</a>
+                </div>
+            </div>
+            <div class="col-xs-12">
+                <p class="text-white text-center">COPYRIGHT - Todos los derechos reservados ©2024</p>
+            </div>
+
+        </div>
+    </div>
+</footer>
+</html>
